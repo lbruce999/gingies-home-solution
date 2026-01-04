@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gingie’s Dashboard (Preview)</title>
+  <link rel="stylesheet" href="./static/css/dashboard.css" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header class="dashboard-header">
+    <div class="brand">
+      <span class="logo">🍪</span>
+      <strong>Gingie’s Dashboard</strong>
+    </div>
+
+    <div class="header-actions">
+      <span class="status-pill">Preview Mode</span>
+      <a href="index.html" class="link">← Back to Website</a>
+    </div>
+  </header>
+
+  <main class="dashboard-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <nav>
+        <a class="active">Overview</a>
+        <a>Quote Requests</a>
+        <a>Active Jobs</a>
+        <a>Completed Work</a>
+        <a>Messages</a>
+        <a>Settings</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="content">
+
+      <!-- Summary Cards -->
+      <div class="cards">
+        <div class="card">
+          <h3>New Requests</h3>
+          <p class="metric">7</p>
+          <span class="muted">Last 7 days</span>
+        </div>
+
+        <div class="card">
+          <h3>Active Jobs</h3>
+          <p class="metric">4</p>
+          <span class="muted">In progress</span>
+        </div>
+
+        <div class="card">
+          <h3>Avg. Response Time</h3>
+          <p class="metric">24h</p>
+          <span class="muted">Goal: 24–48h</span>
+        </div>
+
+        <div class="card">
+          <h3>Customer Rating</h3>
+          <p class="metric">5.0 ★</p>
+          <span class="muted">Mock data</span>
+        </div>
+      </div>
+
+      <!-- Table Section -->
+      <div class="panel">
+        <h2>Recent Quote Requests</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Service</th>
+              <th>Status</th>
+              <th>Received</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jamie R.</td>
+              <td>Repairs</td>
+              <td><span class="badge new">New</span></td>
+              <td>Today</td>
+            </tr>
+            <tr>
+              <td>Taylor M.</td>
+              <td>Maintenance</td>
+              <td><span class="badge progress">In Review</span></td>
+              <td>Yesterday</td>
+            </tr>
+            <tr>
+              <td>Morgan S.</td>
+              <td>Install</td>
+              <td><span class="badge done">Quoted</span></td>
+              <td>2 days ago</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="muted note">
+          This is a visual mockup. Data, actions, and automation will be added later.
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+</html>
